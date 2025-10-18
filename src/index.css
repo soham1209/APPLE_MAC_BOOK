@@ -90,7 +90,7 @@ body {
 
 @layer components {
   header {
-    @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
+    @apply w-[80vw] fixed top-0 left-1/2 -translate-x-1/2 z-50 flex-center bg-black min-h-[7vh];
 
     nav {
       @apply container mx-auto flex-between px-5 2xl:px-0;
@@ -114,7 +114,7 @@ body {
   }
 
   #hero {
-    @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
+    @apply h-fit col-center mt-40 lg:mt-18 2xl:mt-[7vh];
 
     div {
       @apply relative z-10 col-center lg:translate-y-16;
