@@ -90,7 +90,12 @@ body {
 
 @layer components {
   header {
-    @apply w-[80vw] fixed top-0 left-1/2 -translate-x-1/2 z-50 flex-center bg-black min-h-[7vh];
+    @apply w-[80vw] fixed top-0 left-1/2 -translate-x-1/2 z-50 flex-center min-h-[7vh];
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 12px;
+    margin-top: 10px;
 
     nav {
       @apply container mx-auto flex-between px-5 2xl:px-0;
